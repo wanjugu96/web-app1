@@ -1,0 +1,57 @@
+
+<html>
+<body style="background-color:silver;">
+<head>
+<title>
+Register
+</title>
+<p align ="center"> <img src="strath.png"> 
+<script type="text/javascript">
+function sub()
+{
+if(document.getElementById("t1").value=="")
+alert("please enter your first name");
+else if(document.getElementById("t2").value=="")
+alert("please enter your second name");
+else if(document.getElementById("t3").value=="")
+alert("please enter your year of birth");
+else if(document.getElementById("t4").value=="")
+alert("please enter your KCSE grade");
+else
+alert("form has been submitted");
+if(document.getElementById("t4").value=="A")
+alert("eligible");
+else if(document.getElementById("t4").value=="B")
+alert("eligible");
+else if(document.getElementById("t4").value=="C")
+alert("eligible");
+else if(document.getElementById("t4").value=="D")
+alert("eligible");
+else
+alert("not eligible");
+if(document.getElementById("t3"). value<="1998")
+alert("accepted");
+else
+alert("not accepted");
+}
+</script>
+<body>
+<form>
+<p align="center">
+<font face="verdana" color="black">
+First Name:<input type="text"id="t1"><br><br>
+Second Name:<input type="text"id="t2"><br><br>
+Gender:<input type="radio"name="sex"value="male"/>Male
+<input type="radio"name="sex"value="female"/>Female <br>
+Year of Birth:<input type="number"id="t3"><br><br>
+KCSE grade:<input type="text"id="t4"><br>
+<input type="button"value="Submit"onclick="sub()">
+<input type="reset"value="Clear all">
+</font>
+<script type="text/javascript">
+
+</script>
+</form>
+</body>
+</head>
+</html>
